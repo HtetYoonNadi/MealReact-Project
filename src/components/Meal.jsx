@@ -15,9 +15,9 @@ const Meal = () => {
     }
   return (
     <div className='flex flex-wrap gap-10 mt-20 justify-center'>
-        {meals.map(meal => {
+        {meals?.map(meal => {
             return (
-            <MealCart key={meal.idMeal} name={meal.strMeal} image={meal.strMealThumb} />
+            <MealCart key={meal.idMeal} name={meal.strMeal} image={meal.strMealThumb} id={meal.idMeal}/>
             )
         })}
         
